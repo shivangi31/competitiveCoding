@@ -15,7 +15,6 @@ void Arrange(vector<int> &v, int k)
       v[e] = tmp;
       s++;e--;
     }
-    else if()
     else if(v[s]<k)
       s++;
     else if(v[e]>k)
