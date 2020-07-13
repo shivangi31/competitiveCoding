@@ -7,7 +7,7 @@ void Arrange(vector<int> &v, int k)
   int e = n.size()-1;
   while(s<e)
   {
-    if(v[s]>=k && v[e]<k)
+    if(v[s]>=k && v[e]<=k )
     {
       //swap
       int tmp = v[s];
@@ -15,9 +15,10 @@ void Arrange(vector<int> &v, int k)
       v[e] = tmp;
       s++;e--;
     }
+    else if()
     else if(v[s]<k)
       s++;
-    else if(v[e]>=k)
+    else if(v[e]>k)
       e--;    
   }
   return;
